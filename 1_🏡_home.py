@@ -13,9 +13,7 @@ if "data" not in st.session_state:
 st.markdown("# DADOS OFICIAIS DA FIFA ⚽️")
 st.sidebar.markdown("Desenvolvido por [Julio Alencar]")
 
-btn = st.button("Acesse os dados no Kaggle")
-if btn:
-    webbrowser.open_new_tab("https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data")
+btn = st.link_button("Acesse os dados no Kaggle", "https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data")
 
 st.markdown(
     """
